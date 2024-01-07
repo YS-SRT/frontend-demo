@@ -1,0 +1,17 @@
+/* pages/books/index.wxss */
+.block {
+  display: block;
+  margin-bottom: 5rpx;
+}
+
+.grid-item__image {
+  --td-button-medium-icon-font-size: 48rpx;
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f3f3f3;
+  border-radius: 12rpx;
+}

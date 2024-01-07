@@ -1,0 +1,58 @@
+{
+  "entryPagePath": "pages/login/login",
+  "pages": [
+    "pages/aichat/index",
+    "pages/prods/index",
+    "pages/movies/index",
+    "pages/books/index",
+    "pages/friends/index",
+    "pages/login/login",
+    "pages/books/book-detail/index"
+
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#333333",
+    "selectedColor": "#6B1F72",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/aichat/index",
+        "text": "AI聊"
+      },
+      {
+        "pagePath": "pages/prods/index",
+        "text": "物品"
+      },
+      {
+        "pagePath": "pages/books/index",
+        "text": "书籍"
+      },
+      {
+        "pagePath": "pages/movies/index",
+        "text": "电影"
+      },
+      {
+        "pagePath": "pages/friends/index",
+        "text": "朋友"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "微信 DEMO",
+    "backgroundTextStyle": "light"
+  },
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,14 @@
+<!--pages/books/index.wxml-->
+<view class="block">
+  <t-grid border="{{0}}" column="{{5}}" theme="card">
+    <t-grid-item text="书籍" image="/images/book/book1.jpg"  badge-props="{{ { dot: true } }}"/>
+    <t-grid-item text="书籍" image="/images/book/book2.jpg" badge-props="{{ { count: 8 } }}"/>
+    <t-grid-item text="书籍" image="/images/book/book3.jpg" badge-props="{{ { count: 'NEW' } }}" />
+    <t-grid-item text="书籍" image="/images/book/book4.jpg" badge-props="{{ { count: 'NEW' } }}" />
+    <t-grid-item text="书籍" image="/images/book/book5.jpg" badge-props="{{ { count: 'NEW' } }}" />
+  </t-grid>
+</view>
+
+<t-grid class="block" column="{{3}}">
+  <t-grid-item wx:for="{{gridItemList}}" wx:key="index" text="{{item.text}}" image="/images/book/default_book_cover.png" />
+</t-grid>

@@ -1,0 +1,10 @@
+<!--pages/friends/index.wxml-->
+<t-cell-group theme="card">
+  <t-cell title="单行标题" leftIcon="internet" hover arrow />
+  <t-cell title="单行标题" hover arrow >
+    <view class="avatar" slot="left-icon" >
+        <open-data type="userAvatarUrl" />
+    </view>
+    <t-badge count="{{16}}" slot="note" />
+  </t-cell>
+</t-cell-group>

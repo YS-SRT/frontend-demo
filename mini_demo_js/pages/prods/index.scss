@@ -1,0 +1,214 @@
+/* pages/prods/index.wxss */
+page {
+  box-sizing: border-box;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 96rpx);
+}
+
+.goods-list-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 10px;
+  background: #fff;
+}
+
+.goods-card {
+  box-sizing: border-box;
+  font-size: 24rpx;
+  border-radius: 0 0 16rpx 16rpx;
+  border-bottom: none;
+}
+
+.goods-card__main {
+  position: relative;
+  display: flex;
+  line-height: 1;
+  padding: 0;
+  background: transparent;
+  width: 342rpx;
+  border-radius: 0 0 16rpx 16rpx;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16rpx;
+  flex-direction: column;
+}
+
+.goods-card__thumb {
+  flex-shrink: 0;
+  position: relative;
+  width: 340rpx;
+  height: 340rpx;
+}
+
+.goods-card__thumb:empty {
+  display: none;
+  margin: 0;
+}
+
+.goods-card__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 16rpx 16rpx 0 0;
+  overflow: hidden;
+}
+
+.goods-card__body {
+  display: flex;
+  flex: 1 1 auto;
+  background: #fff;
+  border-radius: 0 0 16rpx 16rpx;
+  padding: 16rpx 24rpx 18rpx;
+  flex-direction: column;
+}
+
+.goods-card__upper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex: 1 1 auto;
+}
+
+.goods-card__title {
+  flex-shrink: 0;
+  font-size: 28rpx;
+  color: #333;
+  font-weight: 400;
+  display: -webkit-box;
+  height: 72rpx;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: break-word;
+  line-height: 36rpx;
+}
+
+.goods-card__tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 8rpx 0 0 0;
+}
+
+.goods-card__tag {
+  color: #fa4126;
+  background: transparent;
+  font-size: 20rpx;
+  border: 1rpx solid #fa4126;
+  padding: 0 8rpx;
+  border-radius: 16rpx;
+  line-height: 30rpx;
+  margin: 0 8rpx 8rpx 0;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+}
+
+.goods-card__down {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  line-height: 32rpx;
+  margin: 8rpx 0 0 0;
+}
+
+.goods-card__origin-price {
+  white-space: nowrap;
+  font-weight: 700;
+  order: 2;
+  color: #bbbbbb;
+  font-size: 24rpx;
+  margin: 0 0 0 8rpx;
+}
+
+.goods-card__add-cart {
+  order: 3;
+  margin: auto 0 0 auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.spec-for-price {
+  font-size: 36rpx;
+  white-space: nowrap;
+  font-weight: 700;
+  order: 1;
+  color: #fa4126;
+  margin: 0;
+}
+
+.spec-for-symbol {
+  font-size: 24rpx;
+}
+
+
+.home-page-container .t-tabs {
+  background: #f5f5f5 !important;
+}
+
+.home-page-container .t-tabs .t-tabs-nav {
+  background-color: transparent;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.home-page-container .t-tabs .t-tabs-scroll {
+  border: none !important;
+}
+
+/* 半个字 */
+.home-page-container .tab.order-nav .order-nav-item.scroll-width {
+  min-width: 165rpx;
+}
+.home-page-container .tab .order-nav-item.active {
+  color: #fa550f !important;
+}
+
+.home-page-container .tab .bottom-line {
+  border-radius: 4rpx;
+}
+
+.home-page-container .tab .order-nav-item.active .bottom-line {
+  background-color: #fa550f !important;
+}
+
+.home-page-container .tabs-external__item {
+  /* color: #666 !important; */
+  font-size: 28rpx;
+}
+
+.home-page-container .tabs-external__active {
+  color: #333333 !important;
+  font-size: 32rpx;
+}
+
+.home-page-container .tabs-external__track {
+  /* background-color: #fa4126 !important; */
+  height: 6rpx !important;
+  border-radius: 4rpx !important;
+  width: 48rpx !important;
+}
+
+.t-tabs.t-tabs--top .t-tabs__item,
+.t-tabs.t-tabs--bottom .t-tabs__item {
+  height: 86rpx !important;
+}
+
+.home-page-container .goods-list-container {
+  background: #f5f5f5 !important;
+  margin-top: 16rpx;
+}
+
+.home-page-tabs {
+  --td-tab-nav-bg-color: transparent;
+  --td-tab-border-color: transparent;
+  --td-tab-item-color: #666;
+  --td-tab-track-color: red;
+}
+

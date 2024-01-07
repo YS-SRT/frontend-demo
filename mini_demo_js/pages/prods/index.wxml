@@ -1,0 +1,57 @@
+<import src="../template/banner/dot-banner" />
+
+<view style="text-align: center; color: #b9b9b9">
+  <template is="dot-banner" data="{{banner}}"></template>
+  
+  <view class="home-page-container">
+  <view class="home-page-tabs">
+    <t-tabs
+      t-class="t-tabs"
+      t-class-active="tabs-external__active"
+      t-class-item="tabs-external__item"
+      defaultValue="{{0}}"
+      space-evenly="{{false}}"
+      bind:change="tabChangeHandle"
+    >
+      <t-tab-panel
+        wx:for="{{categoryList}}"
+        wx:for-index="index"
+        wx:key="index"
+        label="{{item.name}}"
+        value="{{item.pid}}"
+      />
+    </t-tabs>
+  </view>
+  </view>
+
+  <view class="goods-list-wrap wr-class" id="{{0}}">
+	  <block wx:for="{{prodList}}" wx:for-item="item" wx:key="index">
+      <view id="{{item.id}}" class="goods-card" bind:tap="clickHandle">        
+          <view class="goods-card__main"> 
+            <view class="goods-card__thumb">
+               <t-image t-class="goods-card__img" src="{{imagePath + item.picUrl}}" mode="aspectFill" lazy-load/>
+		        </view>
+		        <view class="goods-card__body">
+               <view class="goods-card__upper">
+				          <view wx:if="{{ item.name }}" class="goods-card__title"> {{ item.name }} </view>
+                  <view wx:if="{{ item.tags && !!goods.tags.length }}" class="goods-card__tags">
+                    <view wx:for="{{ item.tags }}" wx:key="index" wx:for-item="tag" class="goods-card__tag" data-index="{{index}}">
+						           {{tag}}
+					          </view>
+				          </view>
+			         </view>
+			       <view class="goods-card__down">
+                 <price wx:if="{{ item.retailPrice }}" wr-class="spec-for-price" symbol-class="spec-for-symbol" symbol="{{'￥'}}" price="{{item.retailPrice}}"/>
+				         <t-icon class="goods-card__add-cart" prefix="wr" name="cart-add" id="{{item.id}}-cart" data-id="{{item.id}}" catchtap="addCartHandle" size="48rpx" color="#FA550F"/>
+			       </view>
+		      </view>
+	      </view>
+      </view> 
+    </block>
+  </view>
+
+
+
+</view>
+
+

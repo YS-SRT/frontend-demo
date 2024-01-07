@@ -1,0 +1,4 @@
+<!--pages/movies/index.wxml-->
+<import src="../template/banner/dot-banner" />
+
+<template is="dot-banner" data="{{banner}}"></template>

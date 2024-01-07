@@ -1,0 +1,19 @@
+/* pages/friends/index.wxss */
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32rpx;
+}
+
+.demo-section__desc {
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 16rpx;
+  line-height: 44rpx;
+}
+
+.demo-section__content {
+  margin-top: 32rpx;
+  margin-bottom: 48rpx;
+}

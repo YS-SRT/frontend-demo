@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<!-- <navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar> -->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <t-image src="/images/logo.jpg" width="220px" shape="round" mode="widthFix" />
+    <view class="userinfo">
+      <text class="user-motto">欢迎使用微信Demo</text>
+    </view>
+    <view class="usermotto">
+      <text class="user-motto" bind:tap="bindViewTap">{{motto}}</text>
+    </view>
+  </view>
+</scroll-view>
